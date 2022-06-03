@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: 'Open Sans';
+  font-size: 16px;
+}
+/* HEADER */
+header {
+  position: fixed;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  height: max-content;
+  width: 100%;
+}
+header nav {
+  display: flex;
+}
+header nav a, header nav li {
+  font-size: 1.2rem;
+  color: rgb(201, 201, 201);
+  text-decoration: none;
+  list-style: none;
+  padding: 1vh 2vw;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+header nav a:hover, #here {
+  color: white;
+}
+
+/* MAIN */
+
+#body-subsite {
+  background-color: #efefef;
+}
+main {
+  display: flex;
+  justify-content: center;
+}
+#main-index {
+  flex-wrap: wrap;
+  height: 60vh;
+  background: linear-gradient(to top, black, rgb(5, 5, 5));
+}
+#main-index #grid_title h1 {
+  font-size: 3rem;
+ color: white;
+ margin: 7vh 0;
+}
+#main-index .grid {
+  width: 100%;
+  display: flex;
+}
+#main-index .grid .grid_image {
+  width: calc(100vw / 3);
+  height: calc((100vw / 3) / 4 * 3);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main-index .grid a {
+  color: white;
+  text-decoration: none;
+}
+#main-index .grid a h1 {
+  opacity: 0;
+  font-size: 3vw;
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
+}
+#main-index .grid a:hover h1 {
+  opacity: 100;
+}
+#Leonardo_Fibonacci {
+  background-image: url('../img/Leonardo_Fibonacci.png');
+}
+#Fibonaccijeva_Stevila {
+  background-image: url('../img/Fibonaccijeva_Stevila.jpg');
+}
+#Zlati_Rez {
+  background-image: url('../img/Zlati_Rez.jpg');
+}
+#Leonardo_Fibonacci:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/Leonardo_Fibonacci.png');
+}
+#Fibonaccijeva_Stevila:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/Fibonaccijeva_Stevila.jpg');
+}
+#Zlati_Rez:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/Zlati_Rez.jpg');
+}
+
+#main-subsite {
+  height: fit-content;
+  min-height: 100vh;
+  padding-bottom: 5vh;
+}
+#main-subsite #hero {
+  width: 60%;
+  min-width: 700px;
+}
+#main-subsite #hero .herobox {
+  background-color: white;
+  padding: 5%;
+  margin-top: 5vh;
+  box-shadow: 5px 5px 10px rgb(150, 150, 150);
+}
+#main-subsite #hero .herobox h2 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+#main-subsite #hero .herobox #fibonacci-img {
+  width: 30%;
+  float: right;
+}
+/* FOOTER */
+#footer-index {
+  height: 40vh;
+}
+#footer-subsite {
+  height: max-content;
+}
+footer {
+  display: flex;
+  align-items: flex-end;
+  padding: 5vh 5vw;
+  background-color: black;
+}
+footer .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  min-height: max-content;
+}
+footer ul li {
+  color: white;
+  list-style: none;
+}
+
+#vertical_line {
+  background-color: white;
+  width: 2px;
+}
+
+/* ELSE */ 
+.center {
+  display: block;
+  margin: 0 auto;
+}
+table {
+  width: 70%;
+  margin: 0 auto;
+}
+table, td {
+  text-align: center;
+  border: 1px solid;
+  border-collapse: collapse;
+  column-width: 33%;
+}
